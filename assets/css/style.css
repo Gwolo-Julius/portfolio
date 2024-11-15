@@ -165,6 +165,7 @@ main {
 }
 
 .left {
+  margin: 5rem 0;
   width: 50%;
 }
 
@@ -429,12 +430,6 @@ main {
 .skill__heading span {
   color: var(--main-color);
 }
-.skill__section {
-  /* display: flex;
-  justify-content: space-between;
-  gap: 2rem;
-  align-items: center; */
-}
 
 .skill__section .left {
   width: 100%;
@@ -444,7 +439,7 @@ main {
   gap: 1rem;
 }
 .right {
-  margin-bottom: 2rem;
+  margin: 2rem 0;
   width: 100%;
   display: grid;
   gap: 2rem;
@@ -452,7 +447,7 @@ main {
   grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
 }
 .right p {
-  color:white;
+  color: white;
   font-size: 0.9rem;
 }
 
@@ -510,10 +505,48 @@ main {
   text-align: justify;
   /* background-color: var(--second-bg-color); */
 }
+
+/* @@@@@@@@@@@ Project Section @@@@@@@@@@@@@ */
+.projects__section {
+  background-color: var(--second-bg-color);
+}
+
+.project__container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  justify-items: center;
+  gap: 1.2rem;
+  padding: 5rem 0;
+}
+.project__card {
+  /* width: 300px; */
+  background-color: var(--bg-color);
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.project__desc {
+  padding: 1rem;
+}
+
+.project__desc p {
+  padding: 0.7rem 0;
+  font-size: 1rem;
+}
+
+.project__btn {
+  background-color: var(--main-color);
+  color: #000;
+  padding: 0.45rem;
+  font-weight: 500;
+  border-radius: 0.3rem;
+  transition: var(--transition);
+}
 /* ============= MEDIA QUERIES =============== */
 @media screen and (max-width: 340px) {
-  .hire__me, .projects{
-    padding: .6rem ;
+  .hire__me,
+  .projects {
+    padding: 0.6rem;
   }
 }
 
