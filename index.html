@@ -3,6 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="assets/img/favicon.png"
+      type="image/x-icon"
+    />
     <!-- Google Fonts Exo -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -23,7 +28,7 @@
     <header class="header">
       <div class="header__container container">
         <a href="/">
-          <div class="logo"><span>GJ</span>ulius</div>
+          <div class="logo" id="home"><span>GJ</span>ulius</div>
         </a>
         <nav class="nav">
           <ul class="nav__menu">
@@ -302,9 +307,10 @@
       </section>
       <!-- @@@@@@@@@@@@ Projects Section @@@@@@@@@@ -->
       <section class="projects__section" id="projects">
-        <div class="project__header"></div>
+        <div class="project__header">
+          <h2>Projects</h2>
+        </div>
         <div class="project__container container">
-
           <div class="project__card">
             <div class="project__image">
               <img src="assets/img/project-0.png" alt="" />
@@ -322,52 +328,137 @@
 
           <div class="project__card">
             <div class="project__image">
-              <img src="assets/img/project-0.png" alt="" />
+              <img src="assets/img/project-2.png" alt="" />
             </div>
             <div class="project__desc">
-              <h3>Food Recipe Finder</h3>
+              <h3>Classic JBL Headphones</h3>
               <p>
-                This project is dedicated to all cheps. The technologies used
-                includes, React JS, CSS modules. It was carefully crafted as a
-                requirement for Frontend React Certification.
+                Listen to your favorite music all day long using comfortable JBL
+                headphones. The technologies used includes, HTML, CSS,
+                JavaScript, Git.
               </p>
-              <a href="#" class="project__btn">View Project</a>
+              <a
+                href="https://gwolo-julius.github.io/jbl-headphones-website/"
+                class="project__btn"
+                >View Project</a
+              >
             </div>
           </div>
 
           <div class="project__card">
             <div class="project__image">
-              <img src="assets/img/project-0.png" alt="" />
+              <img src="assets/img/project-3.png" alt="" />
             </div>
             <div class="project__desc">
-              <h3>Food Recipe Finder</h3>
+              <h3>Coffee Landing Page</h3>
               <p>
-                This project is dedicated to all cheps. The technologies used
-                includes, React JS, CSS modules. It was carefully crafted as a
-                requirement for Frontend React Certification.
+                Brighten your day with every sip, experience the richness of
+                coffee. Coffee makes mood. HTML, CSS and JavaScript Project.
               </p>
-              <a href="#" class="project__btn">View Project</a>
+              <a
+                href="https://gwolo-julius.github.io/coffee-site/"
+                class="project__btn"
+                >View Project</a
+              >
             </div>
           </div>
           <div class="project__card">
             <div class="project__image">
-              <img src="assets/img/project-0.png" alt="" />
+              <img src="assets/img/project-4.png" alt="" />
             </div>
             <div class="project__desc">
-              <h3>Food Recipe Finder</h3>
+              <h3>Electric Cars Porsche Brand</h3>
               <p>
-                This project is dedicated to all cheps. The technologies used
-                includes, React JS, CSS modules. It was carefully crafted as a
-                requirement for Frontend React Certification.
+                See the future with high-performance electric cars produced by
+                renowned brands. They feature futuristic builds and designs with
+                new and innovative platforms that last a long time.
               </p>
-              <a href="#" class="project__btn">View Project</a>
+              <a
+                href="https://gwolo-julius.github.io/electric-cars/"
+                class="project__btn"
+                >View Project</a
+              >
+            </div>
+          </div>
+          <div class="project__card">
+            <div class="project__image">
+              <img src="assets/img/project-5.png" alt="" />
+            </div>
+            <div class="project__desc">
+              <h3>Digital Clock App</h3>
+              <p>
+                Arts and Design piece turned into outstanding Digital Clock
+                using plain Vanilla JavaScript, HTML and CSS without any
+                External framework.
+              </p>
+              <a
+                href=" https://gwolo-julius.github.io/DIGITAL-CLOCK-PROJECT/"
+                class="project__btn"
+                >View Project</a
+              >
+            </div>
+          </div>
+          <div class="project__card">
+            <div class="project__image">
+              <img src="assets/img/project-7.png" alt="" />
+            </div>
+            <div class="project__desc">
+              <h3>Guess My Number Game</h3>
+              <p>
+                "This Game is built using Vanilla JavaScript. Enter any number
+                between 0 and 20, if it matches the number represented by ? in
+                the white box, you win else your score decreases by one"
+              </p>
+              <a
+                href=" https://gwolo-julius.github.io/guess-number-game/"
+                class="project__btn"
+                >View Project</a
+              >
             </div>
           </div>
         </div>
       </section>
       <!-- @@@@@@@@@@@@ Contact Section @@@@@@@@@@ -->
+      <section class="contact__section container" id="contact">
+        <h2>Contact <span>Me</span></h2>
+        <form class="form">
+          <div class="form__header">
+            <div class="form__left">
+              <input type="text" placeholder="Enter Your Name" required />
+              <input type="email" placeholder="Email Adress" required />
+            </div>
+            <div class="form__right">
+              <input type="number" placeholder="Mobile Number..." required />
+              <input type="text" placeholder="Email Ref..." required />
+            </div>
+          </div>
+
+          <textarea
+            name="message"
+            id=""
+            rows="10"
+            cols="30"
+            placeholder="Your Message..."
+            required
+          ></textarea>
+          <br />
+          <button class="submit__btn" type="submit" value="Submit">
+            Submit
+          </button>
+        </form>
+      </section>
     </main>
     <!-- @@@@@@@@@@@@ Footer Section @@@@@@@@@@ -->
+    <footer class="footer__section">
+      <div class="footer__container container">
+        <div class="footer__left">
+          &copy; 2024 by CaltexCode. All Rights Reserved.
+        </div>
+        <div class="footer__right">
+          <a href="">&UpArrow;</a>
+        </div>
+      </div>
+    </footer>
 
     <!-- ========== javascript files ========= -->
     <script src="assets/script/main.js"></script>

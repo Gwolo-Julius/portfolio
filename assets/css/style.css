@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   outline: none;
+  resize: none;
   text-decoration: none;
   border: none;
   list-style: none;
@@ -511,6 +512,11 @@ main {
   background-color: var(--second-bg-color);
 }
 
+.project__header {
+  width: 100%;
+  text-align: center;
+  padding-top: 2rem;
+}
 .project__container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
@@ -542,6 +548,98 @@ main {
   border-radius: 0.3rem;
   transition: var(--transition);
 }
+
+/* @@@@@@@@@@@@ Footer @@@@@@@@@@@@@ */
+
+.footer__section {
+  background-color: var(--second-bg-color);
+}
+
+.footer__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 0;
+}
+
+.footer__right a {
+  background-color: var(--main-color);
+  padding: 0.4rem 0.6rem;
+  border-radius: 0.3rem;
+  color: #000;
+  font-weight: 600;
+  font-size: 1.2rem;
+  cursor: pointer;
+  position: fixed;
+  bottom: 2rem;
+  right: 1rem;
+  box-shadow: 0 5px 10px black;
+  transition: var(--transition);
+}
+
+.footer__right:hover a {
+  background-color: #036b94;
+  color: #fff;
+}
+/* @@@@@@@@@@@@@ Contact Form @@@@@@@@@@@@@@@ */
+.contact__section h2 {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.contact__section span {
+  color: var(--main-color);
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  margin: 2rem auto;
+}
+
+.form__header {
+  width: 100%;
+  gap: 0.7rem;
+  justify-content: space-between;
+  display: flex;
+}
+
+.form__left,
+.form__right {
+  width: 100%;
+  /* background-color: red; */
+}
+.form input,
+.form textarea {
+  width: 100%;
+  color: var(--main-color);
+  padding: 0.5rem;
+  font-size: 1rem;
+  border-radius: 0.3rem;
+  margin-bottom: 0.7rem;
+  background-color: transparent;
+  border: 1px solid var(--main-color);
+}
+.form input::placeholder,
+.form textarea::placeholder {
+  color: wheat;
+  font-size: smaller;
+}
+
+.submit__btn {
+  background-color: var(--main-color);
+  padding: 0.7rem;
+  border-radius: 0.4rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-color);
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.submit__btn:hover {
+  background-color: #0088bd;
+}
 /* ============= MEDIA QUERIES =============== */
 @media screen and (max-width: 340px) {
   .hire__me,
@@ -550,6 +648,16 @@ main {
   }
 }
 
+@media screen and (max-width: 500px) {
+  .contact__section .form {
+    width: 100%;
+  }
+  .form__header {
+    width: 100%;
+    flex-direction: column;
+    gap: 0;
+  }
+}
 @media screen and (max-width: 767px) {
   .container {
     width: 90%;
