@@ -421,14 +421,39 @@
       <!-- @@@@@@@@@@@@ Contact Section @@@@@@@@@@ -->
       <section class="contact__section container" id="contact">
         <h2>Contact <span>Me</span></h2>
-        <form class="form">
+        <form
+          class="form"
+          id="form"
+          action="https://api.web3forms.com/submit"
+          method="POST"
+        >
+          <input
+            type="hidden"
+            name="access_key"
+            value="31286bca-357f-4715-a206-dc0a3ad70660"
+          />
           <div class="form__header">
             <div class="form__left">
-              <input type="text" placeholder="Enter Your Name" required />
-              <input type="email" placeholder="Email Adress" required />
+              <input
+                type="text"
+                placeholder="Enter Your Name"
+                name="name"
+                required
+              />
+              <input
+                type="email"
+                placeholder="Email Adress"
+                name="email"
+                required
+              />
             </div>
             <div class="form__right">
-              <input type="number" placeholder="Mobile Number..." required />
+              <input
+                type="number"
+                placeholder="Mobile Number..."
+                name="number"
+                required
+              />
               <input type="text" placeholder="Email Ref..." required />
             </div>
           </div>
@@ -439,6 +464,7 @@
             rows="10"
             cols="30"
             placeholder="Your Message..."
+            name="message"
             required
           ></textarea>
           <br />
@@ -446,6 +472,7 @@
             Submit
           </button>
         </form>
+        <span id="result"></span>
       </section>
     </main>
     <!-- @@@@@@@@@@@@ Footer Section @@@@@@@@@@ -->
