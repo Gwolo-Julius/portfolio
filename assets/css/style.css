@@ -737,4 +737,12 @@ main {
   .right {
     width: 100%;
   }
+  .left .job__title {
+    font-size: 1.4rem;
+  }
+}
+@media screen and (max-width: 330px) {
+  .left .job__title {
+    font-size: 1.2rem;
+  }
 }
