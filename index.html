@@ -25,15 +25,15 @@
     <title>Julius Profile</title>
   </head>
   <body>
-    <header class="header">
+    <header class="header" id="home">
       <div class="header__container container">
-        <a href="/">
+        <a href="/#">
           <div class="logo" id="home"><span>GJ</span>ulius</div>
         </a>
         <nav class="nav">
           <ul class="nav__menu">
             <li class="nav__item">
-              <a href="/" class="nav__link active">Home</a>
+              <a href="/#" class="nav__link active">Home</a>
             </li>
             <li class="nav__item">
               <a href="#about" class="nav__link">About</a>
@@ -472,11 +472,16 @@
             required
           ></textarea>
           <br />
-          <button class="submit__btn" type="submit" value="Submit">
+          <button
+            class="submit__btn"
+            type="submit"
+            name="submit"
+            value="Submit"
+          >
             Submit
           </button>
         </form>
-        <span id="result"></span>
+        <div id="result"></div>
       </section>
     </main>
     <!-- @@@@@@@@@@@@ Footer Section @@@@@@@@@@ -->
@@ -485,9 +490,8 @@
         <div class="footer__left">
           &copy; 2024 by CaltexCode. All Rights Reserved.
         </div>
-        <div class="footer__right">
-          <a href="">&UpArrow;</a>
-        </div>
+
+        <div class="footer__right"><a href="#">&UpArrow;</a></div>
       </div>
     </footer>
 
